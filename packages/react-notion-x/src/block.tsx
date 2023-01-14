@@ -179,7 +179,7 @@ export const Block: React.FC<BlockProps> = (props) => {
                       </div>
                     ))}
 
-                  <main
+                  <article
                     className={cs(
                       'notion-page',
                       hasPageCover
@@ -245,7 +245,7 @@ export const Block: React.FC<BlockProps> = (props) => {
                     )}
 
                     {pageFooter}
-                  </main>
+                  </article>
 
                   {footer}
                 </div>
@@ -254,7 +254,7 @@ export const Block: React.FC<BlockProps> = (props) => {
           )
         } else {
           return (
-            <main
+            <article
               className={cs(
                 'notion',
                 darkMode ? 'dark-mode' : 'light-mode',
@@ -279,7 +279,7 @@ export const Block: React.FC<BlockProps> = (props) => {
               {block.type !== 'collection_view_page' && children}
 
               {pageFooter}
-            </main>
+            </article>
           )
         }
       } else {
